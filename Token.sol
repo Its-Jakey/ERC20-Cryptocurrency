@@ -17,7 +17,7 @@ contract Token {
     uint256 totalSupply_;
 
     constructor(uint256 total) {
-      totalSupply_ = total ** 10 ** decimals;
+      totalSupply_ = total * 1000000000000000000;
       balances[msg.sender] = totalSupply_;
     }
 
